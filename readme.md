@@ -48,16 +48,3 @@ The subscriber generates and sends a packet to the server containing its type an
 ### the TCP socket
 The subscriber shows its given notification or breaks out of the while loop and closes the socket if the `exit` command is given from the server.
 
-## OTHER OBSERVATIONS
-I used the lab 7 for the making of this project.
-The inspiration for the trailing zeroes algorithm was taken from here: `stackoverflow.com/questions/57882748/remove-trailing-zero-in-c`
-
-Unfortunately the checker fails several tests, among which is one of the earliest, data_subscribed.
-Running the tests manually (subscribing to each topic one by one then running the udp client) seems to give the correct output,
-leaving me and a few of my fellow peers who I asked to look over my code stumped.
-I also asked one of the people responsible for the checker for help, but he did not want to look over my code (which is fair enough), and my laboratory teacher,
-but given some unfortunate timing, he was away at the time and didn't have time to help.
-
-I don't blame anyone for this, but I do wish the checker gave a more verbose output, at least for the people of next year:)
-If the person checking this homework can figure out why these tests fail while running the checker, please leave the answer somewhere in the feedback
-I tried plenty of things trying to get it to work and I am genuinely curious where the problem is!
